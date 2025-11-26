@@ -27,7 +27,7 @@ RUN rm -rf node_modules && npm cache clean --force
 FROM node:18-alpine AS production
 
 # Add metadata for the final image
-LABEL maintainer="Amitabh Soni <amitabhdevops2024@gmail.com>" \
+LABEL maintainer="Suryansh Gupta <suryanshg.jiit@gmail.com>" \
       app="gemini" \
       stage="production"
 
