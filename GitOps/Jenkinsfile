@@ -1,7 +1,7 @@
 @Library('Shared')_
 
 pipeline {
-    agent { label 'dev-server' }
+    agent any
     
     parameters {
         string(name: 'GEMINI_DOCKER_TAG', defaultValue: 'v1', description: 'Docker tag for gemini image')
@@ -48,7 +48,7 @@ pipeline {
                         git commit -m "Update gemini image to ${GEMINI_DOCKER_TAG}"
 
                         echo "Pushing changes to github: "
-                        git push https://github.com/Amitabh-DevOps/dev-gemini-clone.git DevOps
+                        git push https://github.com/suryansh639/dev-gemini-clone.git DevOps
                     '''
                 }
             }
@@ -106,7 +106,7 @@ pipeline {
                         </p>
                     </div>
                 """,
-                to: "amitabhdevops2024@gmail.com",
+                to: "suryanshg.jiit@gmail.com",
                 from: "jenkins@example.com",
                 mimeType: 'text/html'
             )
@@ -158,7 +158,7 @@ pipeline {
                         </p>
                     </div>
                 """,
-                to: "amitabhdevops2024@gmail.com",
+                to: "suryanshg.jiit@gmail.com",
                 from: "jenkins@example.com",
                 mimeType: 'text/html'
             )
