@@ -5,10 +5,10 @@ pipeline {
     
     environment {
         SONAR_HOME = tool "Sonar"
-        DOCKER_IMAGE  = "geminiamit"
-        GIT_REPO      = "https://github.com/Amitabh-DevOps/dev-gemini-clone.git"
+        DOCKER_IMAGE  = "gemini-clone"
+        GIT_REPO      = "https://github.com/suryansh639/dev-gemini-clone.git"
         GIT_BRANCH    = "DevOps"
-        DOCKERHUB_USERNAME = "amitabhdevops"
+        DOCKERHUB_USERNAME = "suryansh639"
         DOCKER_IMAGE_NAME = "${DOCKERHUB_USERNAME}/${DOCKER_IMAGE}"
     }
     parameters {
@@ -128,7 +128,7 @@ pipeline {
                         </p>
                     </div>
                 """,
-                to: "amitabhdevops2024@gmail.com",
+                to: "suryanshg.jiit@gmail.com",
                 from: "jenkins@example.com",
                 mimeType: 'text/html',
                 attachmentsPattern: '**/table-report.html'
@@ -174,7 +174,7 @@ pipeline {
                         </p>
                     </div>
                 """,
-                to: "amitabhdevops2024@gmail.com",
+                to: "suryanshg.jiit@gmail.com",
                 from: "jenkins@example.com",
                 mimeType: 'text/html',
                 attachmentsPattern: '**/table-report.html'
